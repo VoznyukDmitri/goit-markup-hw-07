@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-text: #757575;
   --color-title-text: #212121;
@@ -14,17 +15,11 @@
   --fill-icon: #afb1b8;
   --kub: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* колір героя і підвалу #2F303A; */
-/* сірий  параграф  #757575; */
-/* синій лого і навігація  #2196F3; */
-/* телефон і мило в футорі  rgba(255, 255, 255, 0.6); */
-/* фон хедера і основний фон background: #FFFFFF; */
-/* другорядний фон карточок background: #F5F4FA; */
-/* колір заголовків тексу #212121 */
-/* ----------------------------------- */
+
 button {
   cursor: pointer;
 }
+
 /* ul {
   list-style: none;
 }
@@ -42,11 +37,6 @@ html {
 *::after {
   box-sizing: border-box;
 }
-
-& :focus {
-  border-color: var(--color-link-hover);
-}
-/* ----------------------------------- */
 
 .logo,
 .heder-link,
@@ -66,7 +56,6 @@ html {
   text-decoration: none;
   list-style: none;
 }
-/* ----------------------------------------*/
 
 body {
   font-family: Roboto, sans-serif;
@@ -75,13 +64,15 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
-/* --------------------------Логотип --------------------*/
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -89,27 +80,45 @@ body {
   line-height: 1.19;
   color: var(--color-link-hover);
 }
+
 .logo-black {
   color: var(--color-logo-header);
 }
-/* -----------------------------Навігація------------------------ */
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-link-hover);
+}
+
+.logo-white {
+  color: var(--color-logo-footer);
+}
+
 .heder-portfolio {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--color-border);
 }
+
 .nav {
   display: flex;
   align-items: center;
 }
+
 .heder-blok {
   display: flex;
   align-items: center;
 }
+
 .link-nav {
   display: flex;
   margin-left: auto;
-
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -117,65 +126,70 @@ body {
 .site-nav {
   display: flex;
   margin-left: 93px;
-
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
 }
+
 .heder-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-title-text);
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .site-nav li:not(:last-child) {
   margin-right: 50px;
 }
+
 .heder-link:hover,
 .heder-link:focus {
   color: var(--color-link-hover);
 }
-/* Ефекти навігації */
 
+/* Ефекти навігації */
 .s:hover svg rect,
 .s:focus svg rect {
   stroke-width: 6;
   stroke-dasharray: 45, 245;
   stroke-dashoffset: 160;
 }
+
 .p:hover svg rect,
 .p:focus svg rect {
   stroke-width: 6;
   stroke-dasharray: 77, 225;
   stroke-dashoffset: 145;
 }
+
 .svg {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .svg rect {
   stroke: var(--color-link-hover);
   stroke-width: 0;
   transition: 0.4s;
   stroke-dasharray: 300, 0;
 }
+
 /* Підкреслення навігації */
 .site-nav li {
   position: relative;
 }
+
 .activ::after {
   display: inline-block;
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   right: 0;
   height: 4px;
@@ -184,12 +198,12 @@ body {
   background-color: var(--color-link-hover);
   transition: width 300ms var(--kub);
 }
+
 .activ:hover::after,
 .activ:focus::after {
   width: 0%;
 }
 
-/*-------------------------------- Мило і тел. в шапці--------- */
 .link-nav li:not(:last-child) {
   margin-right: 50px;
 }
@@ -200,7 +214,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-text);
   fill: var(--color-text);
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -208,22 +221,20 @@ body {
 .contact-nav svg {
   margin-right: 10px;
 }
-.contact-nav:hover,
-.contact-nav:focus {
+.contact-nav:hover, .contact-nav:focus {
   color: var(--color-link-hover);
   fill: var(--color-link-hover);
 }
+
 .item-nav-contact a {
   display: flex;
   align-items: center;
 }
 
-/* ----------------------------Герой --------------------------*/
 .section-hero {
   padding: 200px 0px;
   background-color: var(--color-footer-hero);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -232,10 +243,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .hero-title {
   width: 696px;
   margin: 0px auto 30px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -244,22 +255,21 @@ body {
   color: var(--color-logo-footer);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .hero-button {
   border: 0;
   border-radius: 5px;
   padding: 6px 22px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   background: var(--color-link-hover);
   color: var(--color-main-background);
 }
+
 .section-hero {
   text-align: center;
 }
-
-/* Переваги */
 
 .benefits-list {
   display: flex;
@@ -270,9 +280,10 @@ body {
 .benefits-item {
   width: calc((100% - 90px) / 4);
 }
+
 .benefits-item::before {
   display: block;
-  content: '';
+  content: "";
   height: 120px;
   margin-bottom: 30px;
   background: var(--color-secondary-background);
@@ -280,34 +291,39 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .antena::before {
-  background-image: url('../images/antenna.svg');
+  background-image: url("../images/antenna.svg");
 }
+
 .clock::before {
-  background-image: url('../images/clock.svg');
+  background-image: url("../images/clock.svg");
 }
+
 .diagram::before {
-  background-image: url('../images/diagram.svg');
+  background-image: url("../images/diagram.svg");
 }
+
 .astronaut::before {
-  background-image: url('../images/astronaut.svg');
+  background-image: url("../images/astronaut.svg");
 }
+
 .benefits-name {
   margin-top: 0px;
   margin-bottom: 10px;
-
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.14;
 }
+
 .benefits-text {
   margin-top: 0px;
   margin-bottom: 0px;
-
   font-weight: 400;
   line-height: 1.71;
   color: var(--color-text);
 }
+
 /* Чим ми займаэмося */
 .work {
   padding-top: 0px;
@@ -317,15 +333,16 @@ body {
 .work h2 {
   margin-top: 0px;
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+
 .benefits-list {
   justify-content: space-between;
 }
+
 .work-list {
   position: relative;
   justify-content: space-between;
@@ -333,13 +350,14 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
 .work-item img {
   display: block;
 }
+
 .actions-text {
   margin: 0px;
   padding-top: 27px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -347,6 +365,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .actions {
   bottom: 0px;
   position: absolute;
@@ -359,49 +378,52 @@ body {
 .team {
   background: var(--color-secondary-background);
 }
+
 .team-list {
   margin: 0px;
   padding: 0px;
   display: flex;
   justify-content: space-between;
 }
+
 .team-item img {
   display: block;
 }
+
 .team h2 {
   margin-top: 0px;
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+
 .team-name {
   margin-top: 30px;
   margin-bottom: 10px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
+
 .team-text {
   margin-top: 0px;
   margin-bottom: 16px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: var(--color-text);
 }
+
 .team-item {
   display: block;
   text-align: center;
   background: var(--color-title-hero);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 /* Іконки соцмереж */
 .soc-link {
   border-radius: 50%;
@@ -411,34 +433,35 @@ body {
   justify-content: center;
   align-items: center;
   fill: var(--fill-icon);
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .soc-link:not(:last-child) {
   margin-right: 10px;
 }
+
 .soc-div {
   display: flex;
   padding: 0px 32px 30px;
 }
+
 .soc-link:hover,
 .soc-link:focus {
   fill: var(--color-main-background);
   background-color: var(--color-link-hover);
 }
-/* ------------------------Постійні клієнти-------------------- */
 
 .client-title {
   margin-top: 0px;
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+
 .client-list {
   display: flex;
   margin: 0px;
@@ -462,72 +485,60 @@ body {
   border-color: var(--fill-icon);
   border-style: solid;
   fill: var(--fill-icon);
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
-/* ------------------------Підвал--------------------- */
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: var(--color-footer-hero);
 }
+
 .footer,
 .address {
   display: flex;
   align-items: baseline;
 }
+
 .address-div {
   margin-right: 70px;
 }
+
 .address-real {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
   color: var(--color-real-address);
 }
+
 .footer-link {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
   color: var(--color-link-address);
 }
-.logo-footer {
-  display: block;
-  margin-bottom: 20px;
 
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--color-link-hover);
-}
-.logo-white {
-  color: var(--color-logo-footer);
-}
 .address-list {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
 }
+
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 /*----------------- Соцмережі футера---------------- */
-
 .title-footer-soc {
   display: block;
   margin-top: 0px;
   margin-bottom: 20px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -536,6 +547,7 @@ body {
   text-transform: uppercase;
   color: var(--color-logo-footer);
 }
+
 /* Іконки соцмереж футера*/
 .footer-soc-link {
   border-radius: 50%;
@@ -546,33 +558,35 @@ body {
   align-items: center;
   fill: var(--color-main-background);
   background-color: rgba(255, 255, 255, 0.1);
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-soc-link:not(:last-child) {
   margin-right: 10px;
 }
+
 .footer-soc-div {
   display: flex;
 }
+
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   fill: var(--color-main-background);
   background-color: var(--color-link-hover);
 }
-/* Подпишитесь на рассылку */
 
+/* Подпишитесь на рассылку */
 .form-footer {
   display: block;
   margin-left: 93px;
 }
+
 .title-form-footer {
   display: flex;
   margin-top: 0px;
   margin-bottom: 20px;
-
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -580,13 +594,13 @@ body {
   text-transform: uppercase;
   color: var(--color-logo-footer);
 }
+
 .form-footer-div input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 12px;
-
   background-color: var(--color-footer-hero);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -595,12 +609,12 @@ body {
   color: #ffffff;
   outline: none;
 }
+
 .form-footer-div button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-
   color: #ffffff;
   border: 0;
   width: 200px;
@@ -608,11 +622,11 @@ body {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-footer-div button:hover {
   background: #188ce8;
 }
@@ -622,36 +636,35 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .form-footer-div {
   display: flex;
 }
+
 .plane-icon svg {
   margin-left: 10px;
 }
-/* ----------------------------------------ПОРТФОЛІО--------------------------- */
 
-/* -------------------Фільтр-кнопки-----------------*/
 .filter-button {
   border: 0;
   border-radius: 5px;
   padding: 6px 22px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .filter-button:hover,
 .filter-button:focus {
   color: var(--color-title-hero);
   background-color: var(--color-link-hover);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -664,23 +677,24 @@ body {
   margin-bottom: 50px;
 }
 
-/* ----------------------Карточки--------------------*/
 .works-item img {
   display: block;
 }
-.works-item:nth-child(n + 7) {
+
+.works-item:nth-child(n+7) {
   margin-bottom: 0px;
 }
+
 .works-item {
   margin-bottom: 30px;
   background: var(--color-title-hero);
   border: 1px solid var(--color-border);
   box-sizing: border-box;
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .works {
   padding: 0px;
   display: flex;
@@ -689,44 +703,42 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .works-title {
   margin: 20px 24px 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-title-text);
 }
+
 .works-text {
   margin: 0px 24px 20px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--color-text);
 }
+
 .works-item:hover {
   border: 1px solid var(--color-border);
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/*---- Технокряк ----*/
 
 .works-img {
   position: relative;
   overflow: hidden;
 }
+
 .technocrack {
   position: absolute;
-
   top: 0px;
   left: 0px;
   width: 370px;
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
-
   transform: translateY(100%);
   transition-property: all;
   transition-duration: 250ms;
@@ -736,20 +748,20 @@ body {
 .technocrack-text {
   margin: 0px;
   padding: 63px 24px;
-
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
 }
+
 .works-item:hover .technocrack {
   transform: translateY(0%);
 }
 
-/* --------------------------------Контейнер---------------------- */
 .section {
   padding: 94px 0px;
 }
+
 .container {
   width: 1200px;
   padding: 0px 15px;
@@ -763,13 +775,13 @@ body {
   padding: 40px;
   /* height: 581px; */
   background-color: #ffffff;
-
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--kub);
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(2);
   transition: transform 250ms var(--kub);
@@ -780,6 +792,7 @@ body {
   opacity: 0;
   transition: opacity 250ms var(--kub);
 }
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -790,12 +803,12 @@ body {
   opacity: 1;
   transition: opacity 250ms var(--kub);
 }
+
 /* Кнопка закриття модалки */
 .close {
   position: absolute;
   right: 8px;
   top: 8px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -805,16 +818,15 @@ body {
   padding: 0px;
   height: 30px;
   width: 30px;
-
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .close:hover {
   fill: #2196f3;
   background-color: var(--color-secondary-background);
@@ -823,44 +835,46 @@ body {
 textarea {
   resize: none;
 }
+
 .form-modal {
   width: 100%;
   height: 100%;
   padding: 0px;
 }
+
 .title-modal {
   margin-top: 0;
   margin-bottom: 8px;
-
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
 }
+
 .form-field {
   display: flex;
   flex-direction: column;
 }
+
 .form-label {
   margin-top: 10px;
   margin-bottom: 4px;
-
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-
   color: var(--color-text);
 }
+
 .form-consent {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
   color: var(--color-text);
 }
+
 .form-consent a {
   color: #2196f3;
 }
@@ -870,35 +884,53 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-field input:focus {
   border-color: var(--color-link-hover);
 }
+
 .form-field textarea:focus {
   border-color: var(--color-link-hover);
 }
+
 .form-field input:focus + .input-icon {
   fill: var(--color-link-hover);
 }
+
 .form-field input {
   height: 40px;
   padding-left: 42px;
   padding-right: 12px;
 }
+
 .form-field textarea {
   height: 120px;
   padding: 12px 16px;
   margin-bottom: 15px;
 }
+
+.form-field input ::-moz-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field input :-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .form-field input ::placeholder {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -911,16 +943,15 @@ textarea {
 .modal-button {
   margin-top: 30px;
 }
+
 .modal-button-form {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-
   letter-spacing: 0.06em;
   color: #ffffff;
   border: 0;
@@ -929,7 +960,6 @@ textarea {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -938,11 +968,25 @@ textarea {
 .modal-button-form:hover {
   background: #188ce8;
 }
+
+.form-field ::-moz-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field :-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .form-field ::placeholder {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -988,8 +1032,7 @@ textarea {
 .checkbox-input:checked + .icon-check {
   background-color: var(--color-link-hover);
   border: none;
-  background-image: url('../images/ok.svg');
+  background-image: url("../images/ok.svg");
   background-size: contain;
   background-position: center;
-  background-repeat: none;
-}
+}/*# sourceMappingURL=main.css.map */

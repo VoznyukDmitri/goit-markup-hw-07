@@ -1,0 +1,53 @@
+button {
+  cursor: pointer;
+}
+/* ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+} */
+/* ------------------------------------ */
+/* Глобальний border-box */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.logo,
+.heder-link,
+.site-nav,
+.link-nav,
+.contact-nav,
+.benefits-list,
+.work-list,
+.team-list,
+.logo-footer,
+.address-list,
+.footer-link,
+.address-real,
+.filter-list,
+.works,
+.works-link {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: var(--color-main-background);
+  color: var(--color-title-text);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
