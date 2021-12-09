@@ -1,13 +1,16 @@
 @import './utils/vars';
 @import './base/reset';
+@import './layout/heder/heder';
 @import './layout/heder/logo';
-@import './layout/heder/nav';
+@import './layout/heder/navigation';
+@import './utils/effects-nav';
 @import './layout/heder/mail-tel';
 @import './layout/hero/hero';
 @import './layout/benefits/benefits';
 @import './layout/whatwedo/whatwedo';
 @import './layout/team/team';
-@import './layout/customers/customers';
+@import './components/networks';
+@import './layout/client/client';
 @import './layout/footer/footer';
 
 @import './layout/portfolio/filter';

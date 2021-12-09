@@ -1,32 +1,28 @@
-/* Чим ми займаэмося */
-.work {
+.wotwedo {
   padding-top: 0px;
   padding-bottom: 94px;
+  & h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
 }
 
-.work h2 {
-  margin-top: 0px;
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-.benefits-list {
-  justify-content: space-between;
-}
-.work-list {
+.wotwedo__list {
   position: relative;
   justify-content: space-between;
   display: flex;
   margin: 0px;
   padding: 0px;
 }
-.work-item img {
+.wotwedo__item img {
   display: block;
 }
-.actions-text {
+.wotwedo__text {
   margin: 0px;
   padding-top: 27px;
 
@@ -37,7 +33,7 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.actions {
+.wotwedo__actions {
   bottom: 0px;
   position: absolute;
   width: 370px;

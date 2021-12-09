@@ -1,14 +1,7 @@
 button {
   cursor: pointer;
 }
-/* ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-} */
-/* ------------------------------------ */
-/* Глобальний border-box */
+
 html {
   box-sizing: border-box;
 }
@@ -19,21 +12,22 @@ html {
   box-sizing: border-box;
 }
 
-.logo,
-.heder-link,
-.site-nav,
-.link-nav,
+// .logo,
+.nav__link,
+.nav__site,
 .contact-nav,
-.benefits-list,
-.work-list,
-.team-list,
-.logo-footer,
-.address-list,
-.footer-link,
+.contact-nav__link,
+.benefits,
+.wotwedo__list,
+.team__list,
+// .logo__footer,
+.address__list,
+.address__link,
 .address-real,
-.filter-list,
+.filter,
 .works,
-.works-link {
+.works__link,
+.client__list {
   text-decoration: none;
   list-style: none;
 }

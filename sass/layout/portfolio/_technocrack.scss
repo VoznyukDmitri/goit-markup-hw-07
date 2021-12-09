@@ -1,7 +1,3 @@
-.works-img {
-  position: relative;
-  overflow: hidden;
-}
 .technocrack {
   position: absolute;
 
@@ -17,7 +13,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.technocrack-text {
+.technocrack__text {
   margin: 0px;
   padding: 63px 24px;
 
@@ -26,6 +22,6 @@
   line-height: 1.5;
   color: #ffffff;
 }
-.works-item:hover .technocrack {
+.works__item:hover .technocrack {
   transform: translateY(0%);
 }
